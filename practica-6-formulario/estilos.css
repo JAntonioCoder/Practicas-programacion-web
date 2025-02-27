@@ -1,0 +1,92 @@
+/* Importar fuente */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1a1a2e, #16213e);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor centrado */
+.container {
+    background: #0f3460;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Estilo para el título */
+.titulo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f4c430;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo para las etiquetas */
+.etiqueta {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #dcdcdc;
+}
+
+/* Contenedor para input y icono */
+.input-container {
+    display: flex;
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Iconos en inputs */
+.icono {
+    color: #0f3460;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Estilos para inputs y select */
+input, select {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+/* Estilo del botón */
+.boton {
+    width: 100%;
+    padding: 12px;
+    background: #f4c430;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #0f3460;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background: #ffdd57;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Contacto</title>
+        <link rel="stylesheet" href="estilos.css">
+        <!-- Agregar FontAwesome desde CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+
+    <div class="container">
+        <h1 class="titulo"><i class="fas fa-globe"></i> Formulario de Contacto</h1>
+
+        <form action="/submit" method="post">
+            <label for="name" class="etiqueta"><i class="fas fa-user"></i> Nombre:</label>
+            <div class="input-container">
+                <i class="fas fa-user-circle icono"></i>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <label for="email" class="etiqueta"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+            <div class="input-container">
+                <i class="fas fa-at icono"></i>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <label for="city" class="etiqueta"><i class="fas fa-city"></i> Ciudad:</label>
+            <div class="input-container">
+                <i class="fas fa-map-marker-alt icono"></i>
+                <select id="city" name="city">
+                    <option value="mty">Monterrey</option>
+                    <option value="cdmx">Ciudad de Mexico</option>
+                    <option value="puebla">Puebla</option>
+                    <option value="gdl">Guadalajara</option>
+                    <option value="tj">Tijuana</option>
+                    <option value="oax">Oaxaca</option>
+                    -<option value="qro">Queretaro</option>
+                    <option value="cun">Cancun</option>
+                </select>
+            </div>
+
+            <button type="submit" class="boton">
+                <i class="fas fa-paper-plane"></i> Enviar
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
