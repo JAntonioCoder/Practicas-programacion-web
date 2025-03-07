@@ -28,7 +28,18 @@
 
 <body>
     <div class="container mt-4">
-        <h1 class="text-center">Bootstrap</h1>
+        <h1 class="text-center titulo-bootstrap">Bootstrap</h1>
+
+<style>
+    .titulo-bootstrap {
+        font-size: 2.5rem; 
+        font-weight: bold;
+        color: #6610f2; /* Color morado */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+</style>
+
         <div class="card">
             <div class="card-header bg-dark text-white text-center">
                 <h4>Información sobre Ferrari</h4>
@@ -236,7 +247,22 @@
     
     <body>
         <div class="container mt-4">
-            <h1 class="text-center"><i class="fas fa-car"></i> FORMULARIO FERRARI</h1>
+            <h1 class="text-center titulo-ferrari">
+                <i class="fas fa-car"></i> FORMULARIO FERRARI
+            </h1>
+            
+            <style>
+                .titulo-ferrari {
+                    color: white; /* Color del texto */
+                    font-family: 'Poppins', sans-serif; /* Fuente elegante */
+                    font-size: 3rem; /* Tamaño del texto */
+                    font-weight: bold; /* Negrita */
+                    text-transform: uppercase; /* Convertir a mayúsculas */
+                    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.7); /* Efecto de sombra roja */
+                    letter-spacing: 3px; /* Espaciado entre letras */
+                    margin-top: 20px; /* Espaciado superior */
+                }
+            </style>
             <div class="form-container">
                 <form action="/submit" method="post">
                     <div class="mb-3 input-group">
@@ -265,6 +291,142 @@
                 </form>
             </div>
         </div>
+  <!-- Sección de Ferrari Destacado con Carrusel -->
+<h2 class="text-center text-danger mt-5"><i class="fas fa-star"></i> Ferrari Destacado</h2>
+<div id="ferrariCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Ferrari SF90 Stradale -->
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mt-4">
+                        <img src="https://www.xtrafondos.com/wallpapers/ferrari-sf90-stradale-2022-9675.jpg" class="card-img-top" alt="Ferrari SF90">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Ferrari SF90 Stradale</h3>
+                            <p class="card-text">El SF90 Stradale es el Ferrari más potente de la historia, con 1000 CV y un diseño aerodinámico impresionante.</p>
+                            <h4 class="text-danger">$625,000 USD</h4>
+                            <button class="btn btn-ferrari w-100"><i class="fas fa-shopping-cart"></i> Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ferrari Roma -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mt-4">
+                        <img src="https://www.hdcarwallpapers.com/walls/ferrari_roma_2020_4k_2-HD.jpg" class="card-img-top" alt="Ferrari Roma">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Ferrari Roma</h3>
+                            <p class="card-text">El Ferrari Roma combina lujo y rendimiento con su motor V8 biturbo de 620 CV.</p>
+                            <h4 class="text-danger">$222,620 USD</h4>
+                            <button class="btn btn-ferrari w-100"><i class="fas fa-shopping-cart"></i> Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ferrari F8 Tributo -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mt-4">
+                        <img src="https://www.hdcarwallpapers.com/download/ferrari_f8_tributo_2019_4k_4-5120x2880.jpg" class="card-img-top" alt="Ferrari F8 Tributo">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Ferrari F8 Tributo</h3>
+                            <p class="card-text">El F8 Tributo es un homenaje al motor V8 de Ferrari, ofreciendo 720 CV de pura adrenalina.</p>
+                            <h4 class="text-danger">$280,000 USD</h4>
+                            <button class="btn btn-ferrari w-100"><i class="fas fa-shopping-cart"></i> Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ferrari Portofino -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mt-4">
+                        <img src="https://diapogram.com/resized/2380-1600-900.jpg" class="card-img-top" alt="Ferrari Portofino">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Ferrari Portofino</h3>
+                            <p class="card-text">El Portofino es un convertible con 600 CV, perfecto para una experiencia de conducción de lujo.</p>
+                            <h4 class="text-danger">$215,000 USD</h4>
+                            <button class="btn btn-ferrari w-100"><i class="fas fa-shopping-cart"></i> Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controles del Carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#ferrariCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ferrariCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+<h2 class="text-center text-danger mt-5"><i class="fas fa-info-circle"></i> Solicita Información</h2>
+<div class="form-container mt-4">
+    <form action="/info" method="post">
+        <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-car"></i></span>
+            <select id="modelo" name="modelo" class="form-control">
+                <option value="sf90">Ferrari SF90 Stradale</option>
+                <option value="roma">Ferrari Roma</option>
+                <option value="f8">Ferrari F8 Tributo</option>
+                <option value="portofino">Ferrari Portofino</option>
+            </select>
+        </div>
+
+        <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" required>
+        </div>
+
+        <button type="submit" class="btn btn-ferrari w-100">
+            <i class="fas fa-paper-plane"></i> Solicitar Información
+        </button>
+    </form>
+</div>
+
+<!-- Sección Visítanos -->
+<h2 class="text-center text-danger mt-5"><i class="fas fa-map-marker-alt"></i> Visítanos</h2>
+<p class="text-center custom-text">Encuéntranos en nuestras sucursales de México, Monterrey, Puebla y Oaxaca para conocer nuestros modelos en persona.</p>
+
+<!-- Estilos Personalizados -->
+<style>
+    .custom-text {
+        color: #FFD700; /* Dorado elegante */
+        font-weight: bold;
+    }
+    .btn-ferrari {
+        background-color: #D50000;
+        color: white;
+        font-weight: bold;
+    }
+    .btn-ferrari:hover {
+        background-color: #A40000;
+    }
+</style>
+
+         
+ 
+     </div>
+     
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
