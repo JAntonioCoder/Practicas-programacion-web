@@ -24,118 +24,107 @@
         }
     </style>
 </head>
-<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">FERRARI</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Acerca de</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Comentarios</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ferrari - Pasión por la Velocidad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://listcarbrands.com/wp-content/uploads/2015/12/Ferrari-logos.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        .card, .navbar, .form-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .titulo-principal {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 20px;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
 <body>
-    <div class="container mt-4">
-        <h1 class="text-center titulo-bootstrap">Bootstrap</h1>
-
-<style>
-    .titulo-bootstrap {
-        font-size: 2.5rem; 
-        font-weight: bold;
-        color: #ffffff; /* Color morado */
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-</style>
-
-
-        <div class="card">
-            <div class="card-header bg-dark text-white text-center">
-                <h4>Información sobre Ferrari</h4>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FERRARI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-header bg-primary text-white text-center">
-                                <h5>Título 1</h5>
-                            </div>
-                            <div class="card-body">
-                                <p>Ferrari es un fabricante de automóviles superdeportivos con sede en Maranello, Italia.</p>
-                                <button class="btn btn-primary">Leer más</button>
-                            </div>
-                        </div>
+        </div>
+    </nav>
+    <body>
+        <div class="container mt-4">
+            <h1 class="text-center titulo-bootstrap">Bootstrap</h1>
+    
+    <style>
+        .titulo-bootstrap {
+            font-size: 2.5rem; 
+            font-weight: bold;
+            color: #6610f2; /* Color morado */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+
+    <div class="container mt-5">
+        <h1 class="titulo-principal">Ferrari: Innovación y Potencia</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h5>Historia de Ferrari</h5>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <img style="height: 80px;" src="https://th.bing.com/th/id/OIP.8Au800Hb3gTZqU66xvJ3nwHaEK?rs=1&pid=ImgDetMain" alt="Imagen" width="150">
-                                <h5 class="mt-2">Ferrari</h5>
-                                <p>El logotipo de Ferrari presenta un Cavallino Rampante.</p>
-                                <button class="btn btn-warning">Más información</button>
-                            </div>
-                        </div>
+                    <div class="card-body">
+                        <p>Ferrari fue fundada en 1939 por Enzo Ferrari y se ha convertido en un símbolo de lujo, velocidad y desempeño.</p>
+                        <button class="btn btn-primary">Leer más</button>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-header bg-danger text-white text-center">
-                                <h5>Título 3</h5>
-                            </div>
-                            <div class="card-body">
-                                <p>Enzo Ferrari fue su creador, fundador de la Scuderia Ferrari en 1929.</p>
-                                <button class="btn btn-danger">Ver más</button>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="https://th.bing.com/th/id/OIP.8Au800Hb3gTZqU66xvJ3nwHaEK?rs=1&pid=ImgDetMain" alt="Ferrari Logo" width="100">
+                        <h5 class="mt-3">El Cavallino Rampante</h5>
+                        <p>El icónico logo de Ferrari representa la fuerza, la elegancia y la pasión por la velocidad.</p>
+                        <button class="btn btn-warning">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h5>Escudería Ferrari</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>La Scuderia Ferrari es el equipo más exitoso en la historia de la Fórmula 1, con múltiples campeonatos mundiales.</p>
+                        <button class="btn btn-danger">Ver más</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header bg-success text-white text-center">
-                    <h5>Sección de Imagen</h5>
-                </div>
-                <div class="card-body text-center">
-                    <img style="height: 150px;" src="https://th.bing.com/th/id/R.7926cbd44ba89fc8c411c8b2d5301a5d?rik=9QjiK0mPPd3PyA&pid=ImgRaw&r=0" alt="Imagen grande">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header bg-dark text-white text-center">
-                    <h5>Botones con Estilos</h5>
-                </div>
-                <div class="card-body text-center">
-                    <button class="btn btn-outline-primary">Primario</button>
-                    <button class="btn btn-outline-success">Éxito</button>
-                    <button class="btn btn-outline-danger">Peligro</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-   
- 
+
 
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
